@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "Reddit Version Chooser",
+  "version": "1.0",
+  "description": "Choose between www.reddit.com, new.reddit.com, or old.reddit.com.",
+  "permissions": [
+    "storage",
+    "declarativeNetRequest",
+    "declarativeNetRequestFeedback"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "host_permissions": [
+    "*://*.reddit.com/*"
+  ]
+}

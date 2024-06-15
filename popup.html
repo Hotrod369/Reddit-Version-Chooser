@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Reddit Version Chooser</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      width: 220px;
+      padding: 10px;
+      border: 2px;
+      border-radius: 20px;
+      background: #CE5937;
+      background: -moz-linear-gradient(left,
+      #CE5937 0%, #1C6EA4 100%, #C59237 100%);
+      background: -webkit-linear-gradient(left,
+      #CE5937 0%, #1C6EA4 100%, #C59237 100%);
+      background: linear-gradient(to right,
+      #CE5937 0%, #1C6EA4 100%, #C59237 100%);
+      text-align: center;
+    }
+    h2 {
+      color: #333;
+    }
+    .button-container {
+      margin-bottom: 15px;
+    }
+    button {
+      background-color: #00aaff;
+      color: white;
+      padding: 10px 20px;
+      margin: 5px 0;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+    button:hover {
+      background-color: #007acc;
+      transform: translateY(-2px);
+    }
+    button:active {
+      background-color: #005f99;
+      transform: translateY(0);
+    }
+    .selected {
+      background-color: #005f99;
+    }
+  </style>
+</head>
+<body>
+  <h2>Choose Reddit Version</h2>
+  <div class="button-container">
+    <button type="button" name="version" value="www">New New Reddit</button>
+  </div>
+  <div class="button-container">
+    <button type="button" name="version" value="new">New Reddit</button>
+  </div>
+  <div class="button-container">
+    <button type="button" name="version" value="old">Old Reddit</button>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
