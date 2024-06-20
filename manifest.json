@@ -6,7 +6,9 @@
   "permissions": [
     "storage",
     "declarativeNetRequest",
-    "declarativeNetRequestFeedback"
+    "declarativeNetRequestFeedback",
+    "tabs",
+    "notifications"
   ],
   "background": {
     "service_worker": "background.js"
@@ -14,7 +16,6 @@
   "action": {
     "default_popup": "popup.html"
   },
-  "options_page": "options.html",
   "host_permissions": [
     "*://*.reddit.com/*"
   ]

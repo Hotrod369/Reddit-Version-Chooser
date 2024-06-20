@@ -23,7 +23,7 @@
     h2 {
       color: #333;
     }
-    .button-container {
+    .button-container, .toggle-container {
       margin-bottom: 15px;
     }
     button {
@@ -60,6 +60,10 @@
   </div>
   <div class="button-container">
     <button type="button" name="version" value="old">Old Reddit</button>
+  </div>
+  <div class="toggle-container">
+    <label for="globalSetting">Apply version globally:</label>
+    <input type="checkbox" id="globalSetting" name="globalSetting">
   </div>
   <script src="popup.js"></script>
 </body>
